@@ -16,10 +16,14 @@
 ## Experimental Results
 
 ### Time vs n
-![time plot](plots/time_vs_n.png)
 
 ### Depth vs n
-![depth plot](plots/depth_vs_n.png)
+## Observations
+- MergeSort and QuickSort behave as expected: ~n log n growth.
+- QuickSort sometimes faster, but variance exists due to random pivot choices.
+- Deterministic Select has linear scaling, but with larger constant factors than sorting, so it is slower for n=10,000.
+- Closest Pair also grows ~n log n, but its constants are high (due to extra geometric checks).
+- Recursion depth matches theory: Select stays at ~1, QuickSort ≤ log n, MergeSort log n, Closest Pair slightly deeper but still logarithmic.
 
 ### Discussion of constant factors
 - У QuickSort виден разброс времени из-за выбора pivot (хотя асимптотика совпадает).
