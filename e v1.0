@@ -1,0 +1,17 @@
+* [33m50e34f4[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/fixes[m[33m, [m[1;32mfixes[m[33m)[m fixes: added new files that convert csv to plots
+* [33m9a122c8[m changed the readme with observ
+* [33mffaa744[m added metrics in order to convert them properply in matplotlib by python
+* [33m2f38865[m[33m ([m[1;32mbench/jmh[m[33m)[m added metrics in order to convert them properply in matplotlib by python
+* [33m865c011[m bench(jmh): add SelectBenchmark and pom.xml update
+* [33m7da2b36[m[33m ([m[1;31morigin/bench/jmh[m[33m)[m bench(jmh): harness for select vs sort
+* [33m2735fa9[m[33m ([m[1;31morigin/feature/cli[m[33m, [m[1;32mfeature/cli[m[33m)[m feat(cli): parse args, run algos, emit CSV
+* [33m032c0f2[m[33m ([m[1;31morigin/feature/closest[m[33m, [m[1;32mfeature/closest[m[33m)[m feat(closest): divide-and-conquer implementation + tests
+* [33m9fd9423[m[33m ([m[1;31morigin/feature/select[m[33m, [m[1;32mfeature/select[m[33m)[m feat(select): deterministic select (MoM5) + tests
+* [33me5eefc9[m[33m ([m[1;31morigin/refactor/util[m[33m, [m[1;32mrefactor/util[m[33m)[m refactor(util): partition, swap, shuffle, guards
+* [33m19118cc[m[33m ([m[1;31morigin/feature/quicksort[m[33m, [m[1;32mfeature/quicksort[m[33m)[m feat(quicksort): smaller-first recursion, randomized pivot + tests
+* [33m3a2d240[m[33m ([m[1;31morigin/feature/mergesort[m[33m, [m[1;32mfeature/mergesort[m[33m)[m feat(mergesort): baseline + reuse buffer + cutoff + tests
+* [33m3a4ad4a[m[33m ([m[1;31morigin/feature/metrics[m[33m, [m[1;32mfeature/metrics[m[33m)[m feat(metrics): counters, depth tracker
+* [33mc623b9d[m feat(metrics): counters, depth tracker
+* [33m37d0d22[m init: maven, junit5, ci, readme
+* [33mc18cc56[m init: maven, junit5, ci, readme
+* [33m0b9f1ec[m init: maven, junit5, ci, readme
