@@ -11,8 +11,10 @@ public class QuickSort {
     }
 
     private static void quicksort(int[] arr, int low, int high) {
-        while (low < high) {
+        if (low >= high) return;
 
+        Metrics.enterRecursion();
+        while (low < high) {
             int pivotIndex = low + rand.nextInt(high - low + 1);
             int pivot = arr[pivotIndex];
             swap(arr, pivotIndex, high);
@@ -28,11 +30,14 @@ public class QuickSort {
                 high = p - 1;
             }
         }
+
+        Metrics.exitRecursion();
     }
 
     private static int partition(int[] arr, int low, int high, int pivot) {
         int i = low - 1;
         for (int j = low; j < high; j++) {
+            Metrics.incComparisons();
             if (arr[j] <= pivot) {
                 i++;
                 swap(arr, i, j);

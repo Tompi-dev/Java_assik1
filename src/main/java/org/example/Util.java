@@ -15,6 +15,7 @@ public class Util {
     public static int partition(int[] arr, int low, int high, int pivotValue) {
         int i = low - 1;
         for (int j = low; j < high; j++) {
+            Metrics.incComparisons();
             if (arr[j] <= pivotValue) {
                 i++;
                 swap(arr, i, j);
