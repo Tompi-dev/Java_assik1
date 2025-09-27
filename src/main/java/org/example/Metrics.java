@@ -2,6 +2,8 @@ package org.example;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.File;
+import java.io.IOException;
 
 
 public class Metrics {
@@ -73,13 +75,27 @@ public class Metrics {
     }
 
 
+//    public static void writeToCSV(String filename, String algo, int n) {
+//        try (FileWriter fw = new FileWriter(filename, true)) {
+//            fw.write(algo + "," + n + "," + getComparisons() + "," + getAllocations()
+//                    + "," + getMaxDepth() + "," + getElapsedTimeMillis() + "\n");
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
+//    // teper tochno
+
     public static void writeToCSV(String filename, String algo, int n) {
+        boolean fileExists = new java.io.File(filename).exists();
         try (FileWriter fw = new FileWriter(filename, true)) {
+            if (!fileExists) {
+                fw.write("algo,n,comparisons,allocations,depth,time\n");
+            }
             fw.write(algo + "," + n + "," + getComparisons() + "," + getAllocations()
                     + "," + getMaxDepth() + "," + getElapsedTimeMillis() + "\n");
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-    // teper tochno
+
 }

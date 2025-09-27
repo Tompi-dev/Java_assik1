@@ -47,7 +47,7 @@ public class Cli {
         }
 
         Metrics.stopTimer();
-        Metrics.writeToCSV("results.csv", algo, n);
+        Metrics.writeToCSV("src/main/results.csv", algo, n);
 
         System.out.println("Algo: " + algo + " | n=" + n);
         System.out.println("Comparisons: " + Metrics.getComparisons());
